@@ -1,11 +1,11 @@
 # Running the Flight Itinerary UI on Your Machine
 
 
-### 1. Clone the repo to your machine and move to the my-flight-app directory
+### 1. Clone the repo to your machine and move to the directory
 
 ```shellscript
 git clone <URL>
-cd my-flight-app
+cd tour-mart-task-2
 ```
 
 
@@ -15,27 +15,8 @@ cd my-flight-app
 npm install
 ```
 
-### 3. Set Up shadcn/ui Components
 
-Install the shadcn CLI:
-
-```shellscript
-npm install -D @shadcn/ui
-```
-
-Initialize shadcn/ui:
-
-```shellscript
-npx shadcn@latest init
-```
-
-Add the Button component:
-
-```shellscript
-npx shadcn@latest add button
-```
-
-### 4. Run the Development Server
+### 3. Run the Development Server
 
 ```shellscript
 npm run dev
