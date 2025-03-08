@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Running the Flight Itinerary UI on Your Machine
 
-## Getting Started
 
-First, run the development server:
+### 1. Clone the repo to your machine and move to the my-flight-app directory
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```shellscript
+git clone <URL>
+cd my-flight-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. Install Required Dependencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```shellscript
+npm install
+```
 
-## Learn More
+### 3. Set Up shadcn/ui Components
 
-To learn more about Next.js, take a look at the following resources:
+Install the shadcn CLI:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```shellscript
+npm install -D @shadcn/ui
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Initialize shadcn/ui:
 
-## Deploy on Vercel
+```shellscript
+npx shadcn@latest init
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Add the Button component:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```shellscript
+npx shadcn@latest add button
+```
+
+### 4. Run the Development Server
+
+```shellscript
+npm run dev
+```
+
+Then open your browser and navigate to:
+
+```plaintext
+http://localhost:3000/flight-itinerary
+```
